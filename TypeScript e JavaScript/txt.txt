@@ -1,0 +1,59 @@
+//saber o tipo da variável
+console.log(typeof (primeiroNumero));
+
+//template strings
+console.log(`nome ${sonbreNome} tem ${idade} anos pesa ${peso} kg` )
+console.log(`tem ${alturaEmM} e seu IMC é de ${imc}`)
+console.log( `${nome} nasceu em ${anoNascimento}`);
+
+/**
+ * Aritméticos
+ * adição/ concatenação (+)
+ * subtração (-)
+ * divisão (/)
+ * multiplicação(*)
+ * potenciação (**)
+ * resto da divisão(%)
+ */
+
+//converter string em numero
+/**
+ * parseInt(converte para inteiro)
+ * parseFloat(converte pata decimais)
+ * Number( converte para as duas formas)
+ */
+
+//Strings
+
+/*console.log(umaString[4]);// pegar alguma locazição especifica de uma string
+console.log(umaString.charAt(4));//achar uma caracter
+console.log(umaString.concat('em','um','lindo dia'));// concatenar strings
+console.log(`${umaString} em um lindo dia`);// concatenar
+console.log(umaString.indexOf('texto'));// ver qual o indice de uma palavra ou caracter (do inicio para o fim)
+console.log(umaString.lastIndexOf('m'));// ver qual o indice de uma palavra ou caracter(do fim para o inicio)
+console.log(umaString.match(/[a-z]/g));// expressão regular
+console.log(umaString.match(/[a-z]/));// expressão regular
+console.log(umaString.search(/r/));// Encontrar uma letra
+console.log(umaString.replace('Encontre','Ache'));// faz a troca
+console.log(umaString.replace(/r/g,'#'));// substitui algo, usando /r/g, pega todos , sem o 'g' pega apenas o primeiro
+console.log(umaString.length);// monstra o tamanho da string
+console.log(umaString.slice(2,6));// fatio a string no intervalo , sempre por um a mais do que desejado , ex: quero o indice 5 coloco o 6
+console.log(umaString.slice(-3));// pegar as ultimos caracter
+console.log(umaString.slice(-5,-1));// posso escolher um intervalo dessa forma.
+console.log(umaString.split(' ', 3));// separar por um caracter escolhido*/
+console.log(umaString.toLocaleUpperCase());// deixa tudo maiúsculo
+console.log(umaString.toLocaleLowerCase());//tudo minúsculo
+
+Math
+
+console.log(num1**(1/2)); // pegar raiz quadrada
+console.log(num1**0.5); // pegar raiz quadrada
+// let num2= Math.floor(num1); Arredonda o numero para baixo
+// let num2= Math.ceil(num1); Arredonda para cima.
+// let num2= Math.round(num1);  Arredonda para o mais proximo ex: 9.6 fica 10; 9.4 fica 9
+//console.log(Math.max(1,2,8,6,2,47,6,47,626,5478)); Pega o maior valor dentro da sequencia
+//console.log(Math.min(1,2,8,6,2,47,6,47,626,5478)); Pega o menor valor dentro da sequencia
+//console.log(Math.random()*(10-5)+5; Pega um numero aleatorio entre 10 e 5 flutuante
+//console.log(Math.floor(Math.random()*(10-5)+5); Pega um numero aleatorio entre 10 e 5 inteiro
+// console.log(Math.PI); Valor de Pi
+// console.log(Math.pow(2,10));// faz potencia
