@@ -57,3 +57,26 @@ console.log(num1**0.5); // pegar raiz quadrada
 //console.log(Math.floor(Math.random()*(10-5)+5); Pega um numero aleatorio entre 10 e 5 inteiro
 // console.log(Math.PI); Valor de Pi
 // console.log(Math.pow(2,10));// faz potencia
+
+/*
+Operadores de operação
+
+> Maior que
+>= Maior ou igual a
+< Menor que
+<= Menor ou igual a
+== Igualdade (Valor)
+=== Igualdade estrita (Valor e tipo)
+!= Diferente (Valor)
+!== Diferente estrito (Valor e tipo)
+
+ */
+
+ /*
+Operadores lógicos
+
+&& -> AND -> E
+|| -> OR -> OU
+! -> NOT -> NÃO
+
+*/
