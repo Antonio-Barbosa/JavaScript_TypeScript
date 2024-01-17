@@ -1,0 +1,16 @@
+{
+    "version": 3,
+    "file": "bundle.js",
+    "mappings": ";;;;;AAAA;AACA;AACA;AACAA,OAAO,CAACC,GAAG,CAAC,IAAI,CAAC,C",
+    "sources": [
+        "webpack://AULA93/./src/index.js"
+    ],
+    "sourcesContent": [
+        "// 1\n// 2\n// 3\nconsole.log('OI');\n"
+    ],
+    "names": [
+        "console",
+        "log"
+    ],
+    "sourceRoot": ""
+}
