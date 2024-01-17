@@ -1,0 +1,32 @@
+* Para fazer instalações de pacotes uso:
+    npm install "Nome do pacote"
+
+* Se por no final um -E ele não vai atualizar a versão do pacote:
+    npm install "Nome do pacote" -E
+
+* Para fazer atualizações de pacotes ja instalados:
+    npm update
+
+* Para transformar em devDependecies:
+    npm install "Nome do pacote" --save-dev
+
+* Para voltar para dependecies:
+    npm install "Nome do pacote" --save-prod
+
+* Para instalar uma verção uma versão especifica de uma dependencia:
+    npm install "Nome do pacote@versão desejada"
+
+* Para desinstalar uma dependencia
+    npm uninstall "Nome do pacote"
+
+* Para listar os pacotes instalados
+    npm ls
+
+* Para listar apenas as dependencias que eu instalei
+    npm ls --depth=0
+
+* Para visualizar quais pacotes estão desatualizados
+    npm outdated
+
+
+
