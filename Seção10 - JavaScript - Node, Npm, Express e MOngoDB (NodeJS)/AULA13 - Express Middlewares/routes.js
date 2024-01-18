@@ -1,0 +1,26 @@
+const express = require('express')
+const route = express.Router(); // Aqui uso o Router do próprio express
+const homeController = require('./src/controllers/homeController')
+const contatoController = require('./src/controllers/contatoController')
+
+
+/*
+Agora crio um arquivo controller, onde nele vai estar separado tudo que preciso 
+para uma detarminada página, lá faço a função que preciso, por exemplo um get ou post,
+e importo no meu arquivo de rotas. 
+*/
+
+/*
+Quando for usar middleware preciso de mais um argumento em minha função, o next
+ele garante que eu passe para a proxima middleware.
+*/
+
+
+
+route.get('/', homeController.paginaInicial)
+route.post('/', homeController.trataPost)
+
+//Rotas de contato
+route.get('/contato', contatoController.paginaInicial);
+
+module.exports = route;
