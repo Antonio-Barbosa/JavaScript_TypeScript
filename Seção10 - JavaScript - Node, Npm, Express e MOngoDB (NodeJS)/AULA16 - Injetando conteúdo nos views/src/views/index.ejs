@@ -1,0 +1,41 @@
+
+<%- include('includes/head'); %>
+
+
+
+  <section class="container">
+
+    <!-- Para pegar informações recebidas do meu backEnd, como exemplo ejs, uso <%= %> e dentro
+    coloco o nome igual da chave que estou recebendo. -->
+    <h1>
+      <!--Neste caso, quando uso o sinal de = não executo possiveis códigos que possam vir nas informações-->
+      <%= titulo %> <br>
+
+        <!--Quando uso sinal de - vou executar posiveis códigos vindo das infrmações por exemplo um css-->
+        <!-- <%- titulo %> <br> -->
+
+        <!-- Para usar códigos, não uso nenhum sinal, apenas <% %> como no exemplo abaixo -->
+
+        <!-- <% if(typeof titulo !=='undefined' ) { %>
+              <%= titulo %>
+            <% } else { %>
+                O titulo não foi enviado
+            <% } %> -->
+
+        <% numeros.forEach(num=> { %>
+
+          <%= num %> <br>
+
+        <% }); %>
+
+    </h1>
+
+    <form action="/" method="post">
+      <label>Cliente</label>
+      <input type="text" name="cliente">
+      <button>Enviar</button>
+    </form>
+
+  </section>
+
+  <%- include('includes/footer') %>
