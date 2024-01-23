@@ -1,0 +1,24 @@
+
+<%- include('includes/head'); %>
+
+
+
+  <section class="container">
+
+   
+    <h1>
+      <!--Neste caso, quando uso o sinal de = não executo possiveis códigos que possam vir nas informações-->
+      <%= titulo %> <br>   
+
+    </h1>
+
+    <form action="/" method="post">
+      <input type="hidden" name="_csrf" value="<%= csrfToken %>">
+      <label>Cliente</label>
+      <input type="text" name="cliente">
+      <button>Enviar</button>
+    </form>
+
+  </section>
+
+  <%- include('includes/footer') %>
