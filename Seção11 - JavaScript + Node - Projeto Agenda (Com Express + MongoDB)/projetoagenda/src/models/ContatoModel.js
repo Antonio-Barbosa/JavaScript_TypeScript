@@ -25,14 +25,14 @@ Contato.buscaPorId = async function (id) {
 }
 
 Contato.prototype.register = async function () {
-    this.validate();
+    this.valida();
 
     if (this.errors.length > 0) return;
 
     this.contato = await ContatoModel.create(this.body);
 }
 
-Contato.prototype.validate = function () {
+Contato.prototype.valida = function () {
 
     this.cleanUp()
     // Validação
@@ -58,6 +58,15 @@ Contato.prototype.cleanUp = function () { // Vou garantir que tudo no meu body �
         email: this.body.email,
         telefone: this.body.telefone
     };
+
+}
+
+Contato.prototype.edit = async function (id) {
+    if (typeof id !== 'string') return;
+    this.valida();
+    if (this.errors.length > 0) return;
+
+    this.contato = await ContatoModel.findByIdAndUpdate(id, this.body, { new: true });
 
 }
 
