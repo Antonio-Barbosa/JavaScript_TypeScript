@@ -28,6 +28,5 @@ exports.loginRequired = (req, resp, next) => {
         })
         return;
     };
-
     next();
 }

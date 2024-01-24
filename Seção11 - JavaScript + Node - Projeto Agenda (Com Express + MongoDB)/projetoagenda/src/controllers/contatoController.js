@@ -1,3 +1,4 @@
+const { async } = require('regenerator-runtime');
 const Contato = require('../models/ContatoModel')
 
 exports.index = (req, resp) => {
@@ -5,7 +6,7 @@ exports.index = (req, resp) => {
     resp.render('contato', {
         contato: {}
     });
-    
+
 }
 
 exports.register = async (req, resp) => {
@@ -64,6 +65,16 @@ exports.edit = async (req, resp) => {
         console.log(error);
         return resp.render('404');
     }
-
-
 }
+
+exports.delete = async (req, resp) => {
+
+    if (!req.params.id) return resp.render('404');
+    const contato = await Contato.delete(req.params.id);
+    if (!contato) return resp.render('404');
+
+    req.flash('success', 'Contato apagado com sucesso.');
+    req.session.save(() => resp.redirect('back'))
+    return;
+    
+};
