@@ -9,10 +9,24 @@
 
             <ul class="navbar-nav ms-auto">
 
-                <li class="nav-item ">
-                    <a class="nav-link" href="#">Link</a>
-                </li>
+                <% if(user) {%>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="/contato/index">Cadastrar contato</a>
+                    </li>
+                    <% } %>
 
+
+                        <% if(!user) {%>
+                            <li class="nav-item ">
+                                <a class="nav-link" href="/login/index">Entrar</a>
+                            </li>
+                            <% } %>
+
+                                <% if(user) {%>
+                                    <li class="nav-item ">
+                                        <a class="nav-link" href="/login/logout">Sair</a>
+                                    </li>
+                                    <% } %>
             </ul>
 
         </div>
